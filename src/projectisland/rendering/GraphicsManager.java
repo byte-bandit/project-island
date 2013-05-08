@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class GraphicsManager
 {
-	private static LinkedList<DrawableGameComponent> children = new LinkedList<DrawableGameComponent> ();;
+	private static LinkedList<DrawableGameComponent> children = new LinkedList<DrawableGameComponent> ();
 	
 	public static void draw()
 	{

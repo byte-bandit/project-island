@@ -1,9 +1,6 @@
 package projectisland.rendering;
 
-public abstract class DrawableGameComponent
+public interface DrawableGameComponent
 {
-	public void draw()
-	{
-		
-	}
+	public void draw();
 }

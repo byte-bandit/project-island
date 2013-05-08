@@ -24,7 +24,7 @@ public class ProjectIsland extends BasicGame
   @Override
   public void update(GameContainer gc, int delta) throws SlickException
   {
-	  projectisland.update.UpdateManager.Update();
+	  projectisland.update.UpdateManager.update();
   }
  
   @Override

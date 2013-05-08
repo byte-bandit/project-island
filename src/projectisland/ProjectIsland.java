@@ -1,4 +1,4 @@
-package ProjectIsland;
+package projectisland;
 
 import org.newdawn.slick.*;
 

@@ -17,7 +17,7 @@ public class UIElement implements DrawableGameComponent {
     protected int posY =0;
     protected int elementWidth = 0;
     protected int elementHeight = 0;
-    private Color _backgroundColor = Color.black;
+    private Color _backgroundColor = Color.white;
     private int _id = -1;
     
     
@@ -30,6 +30,56 @@ public class UIElement implements DrawableGameComponent {
 
     }
     
+    public Color getBackgroundColor()
+    {
+        return _backgroundColor;
+    }
+
+    public void setBackgroundColor(Color backgroundColor)
+    {
+        _backgroundColor = backgroundColor;
+    }
+    
+     public final boolean isMouseOver(int x, int y)
+    {
+        return x > posX && x < (posX + elementWidth) &&
+               y > posY && y < (posY + elementHeight);
+    }
+     
+    public void setX(int x)
+    {
+        posX = x;
+    }
+
+    public final int getY()
+    {
+        return posY;
+    }
+    
+    public void setY(int y)
+    {
+        posY = y;
+    }
+    
+    public int getWidth()
+    {
+        return elementWidth;
+    }
+
+    public void setWidth(int width)
+    {
+        elementWidth = width;
+    }
+
+    public int getHeight()
+    {
+        return elementHeight;
+    }
+
+    public void setHeight(int height)
+    {
+        elementHeight = height;
+    }
 
     @Override
     public void draw(Graphics g) {

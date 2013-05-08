@@ -4,6 +4,8 @@
  */
 package projectisland.level;
 
+import projectisland.Configuration;
+
 /**
  *
  * @author subzeros
@@ -11,12 +13,22 @@ package projectisland.level;
 public class Island {
     private Tile[][] level = null;
     
-    public Island() {
-        //level = generateLevel();
+    public Island()
+    {
+        level = generateLevel();
     }
     
-    /*public static Tile[][] generateLevel()
+    public static Tile[][] generateLevel()
     {
-        return new Tile[10];
-    }*/
+        //initial instantiation
+        Tile[][] creator = new Tile[Configuration.TILE_SIZE][];
+        for(int i = 0; i < Configuration.TILE_SIZE; i++) {
+            creator[i] = new Tile[Configuration.TILE_SIZE];
+        }
+        
+        //create island
+        
+        
+        return creator;
+    }
 }

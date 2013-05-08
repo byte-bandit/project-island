@@ -20,5 +20,4 @@ public class Tile {
         gridY = 0;
         visible = false;
     }
-    
 }

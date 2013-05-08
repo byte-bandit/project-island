@@ -14,6 +14,7 @@ import projectisland.rendering.DrawableGameComponent;
 public class Tile {
     private int gridX, gridY;
     private boolean visible;
+	private TileType type;
     
     public Tile() {
         gridX = 0;

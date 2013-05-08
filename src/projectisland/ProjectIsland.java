@@ -14,7 +14,11 @@ public class ProjectIsland extends BasicGame
   @Override
   public void init(GameContainer gc) throws SlickException
   {
-	  
+	  Configuration.WINDOW_ASPECT_RATIO = gc.getAspectRatio();
+	  Configuration.WINDOW_HEIGHT = gc.getHeight();
+	  Configuration.WINDOW_WIDTH = gc.getWidth();
+	  Configuration.WINDOW_SCREEN_HEIGHT = gc.getScreenHeight();
+	  Configuration.WINDOW_SCREEN_WIDTH = gc.getScreenWidth();
   }
  
   @Override

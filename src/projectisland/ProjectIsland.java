@@ -14,19 +14,20 @@ public class ProjectIsland extends BasicGame
   @Override
   public void init(GameContainer gc) throws SlickException
   {
- 
+	  
   }
  
   @Override
   public void update(GameContainer gc, int delta) throws SlickException
   {
- 
+	  projectisland.update.UpdateManager.Update();
   }
  
   @Override
   public void render(GameContainer gc, Graphics g) throws SlickException
   {
-     g.drawString("Hello World", 100, 100);
+	  projectisland.rendering.GraphicsManager.draw(g);
+	  g.drawString("Hello World", 100, 100);
   }
  
   public static void main(String[] args) throws SlickException
